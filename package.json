@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "postinstall": "webpack -p",
-    "start":"node server.js",
+    "start": "node server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
@@ -24,13 +24,16 @@
   "dependencies": {
     "axios": "^0.18.0",
     "babel-preset-stage-1": "^6.1.18",
+    "browserify": "^16.2.2",
     "lodash": "^3.10.1",
+    "loose-envify": "^1.4.0",
     "react": "16.3.2",
     "react-dom": "16.3.2",
     "react-redux": "5.0.7",
     "react-router-dom": "^4.2.2",
     "redux": "4.0.0",
     "redux-form": "^6.6.3",
-    "redux-promise": "^0.6.0"
+    "redux-promise": "^0.6.0",
+    "snap": "^0.2.2"
   }
 }
